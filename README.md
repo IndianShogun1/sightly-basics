@@ -1,7 +1,6 @@
 # sightly-basics
 
-Please refer to the package org.shreyansh.htl only for the source codes.
-
+Please refer to the package org.shreyansh.osgiDemo.htl only for the source codes.
 
 1. Create a component that displays the child pages of the path provided by author .  Note: The child pages list must be fetched by sending a ajax call (Only in disabled mode) to the servlet that takes the path as parameter  
 
