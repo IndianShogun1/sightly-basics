@@ -7,7 +7,6 @@ import org.osgi.service.component.annotations.Component;
 import org.apache.sling.api.resource.Resource;
 import org.osgi.service.component.annotations.Activate;
 import org.osgi.service.component.annotations.Reference;
-//import org.shreyansh.osgiDemo.services.ClassConfiguration;
 
 import java.util.*;
 
@@ -27,35 +26,6 @@ public class ListChildrenService implements SomeService {
 
     @Override
     public List<Resource> listChildren(String path) {
-//        System.out.println("In method");
-//        ResourceResolver resourceResolver = null;
-//        Iterator<Resource> children = null;
-//        Map<String, Object> map = new HashMap<String, Object>();
-//        map.put(ResourceResolverFactory.SUBSERVICE, "SomeService");
-//        try {
-//            resourceResolver = resolverFactory.getServiceResourceResolver(map);
-//            Resource resource = resourceResolver.getResource(path);
-//            children = resource.listChildren();
-//            int count = 0;
-//            while(children.hasNext()) {
-//                count++;
-//                children.next();
-//            }
-//            System.out.println(count);
-//            resourceResolver.close();
-//            return children;
-//        } catch (LoginException e) {
-//            System.out.println("in catch");
-//            e.printStackTrace();
-//        }
-//        int count = 0;
-//        while(children.hasNext()) {
-//            count++;
-//            children.next();
-//        }
-//        System.out.println(count);
-//
-//        return children;
 
         List<Resource> childrenList = new ArrayList<>();
         try {
@@ -80,10 +50,7 @@ public class ListChildrenService implements SomeService {
 
         } catch (LoginException e) {
             e.printStackTrace();
-        } //// finally {
-//            resourceResolver.close();
-//        }
+        } 
         return childrenList;
-
     }
 }
